@@ -11,7 +11,7 @@
                     <tr>
                         <td>이미지</td>
                         <td>
-                            <img src="{{url_for('static', filename = 'images/uploads' + filename)}}" width = '440' alt="uploaded image">
+                            <img src="{{url_for('static', filename = 'images/uploads' + filename, q = mtime)}}" width = '440' alt="uploaded image">
                         </td>
                     </tr>
                     <tr class="alert alert-warning">
@@ -21,7 +21,7 @@
                     <tr>
                         <td colspan="2" style="text-align: center;">
                             <button class="btn btn-primary"
-                                    onclick="location.href='/sentiment'">재실행</button>
+                                    onclick="location.href='/classification_image'">재실행</button>
                         </td>
                     </tr>
                 </table>		
